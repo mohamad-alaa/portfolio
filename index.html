@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a223eb225.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.jpg" id= "alaa" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring AI Engineer | Web Developer</p>
+                <h1>Hi, I'm <span>Alaa</span></h1>
+            </div>
+        </div>
+    </header>
+    <!-----------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile3.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p id="desc-p">
+                        I’m a passionate Aspiring AI Engineer and Web Developer with a love for turning ideas into functional, intelligent systems. 
+                        My journey began with building websites using Python, Django, and JavaScript, and now I’m diving into the world of AI/ML to create solutions that learn and adapt. 
+                        I thrive on problem-solving—whether it’s designing responsive UIs, optimizing algorithms, or training neural networks to recognize patterns. Currently, 
+                        I’m sharpening my skills in TensorFlow and React.js while working on projects that bridge web development with machine learning, like chatbots or predictive tools.
+                        When I’m not coding, I’m either exploring the latest tech trends, contributing to open-source projects, 
+                        or brainstorming how AI can simplify everyday tasks. My goal? To build technology that’s not just powerful, but also human-centric and accessible.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('learning-now')">Learning Now</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Python | JavaScript</li>
+                            <li><span>Web Development</span><br>Html/CSS, Django, Bootstrab</li>
+                            <li><span>Databases</span><br>MySQL</li>
+                            <li><span>Algorithms</span><br>Problem-solving, Data Structures</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Python Programming Fundamentals</span><br>Microsoft Coursera</li>
+                            <li><span>Programming in Python</span><br>Meta Coursera</li>
+                            <li><span>Introduction to Backend Development</span><br>Meta Coursera</li>
+                            <li><span>Version Control</span><br>Meta Coursera</li>
+                            <li><span>Introduction to Databases For Back-End Development</span><br>Meta Coursera</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="learning-now">
+                        <ul>
+                            <li><span>AI/ML</span><br>TensorFlow/PyTorch (Basics), NLP (Text Processing)</li>
+                            <li><span>Web Frameworks</span><br>React.js (Frontend), FastAPI (Backend)</li>
+                            <li><span>Database</span><br>Firebase (NoSQL), PostgreSQL</li>
+                            <li><span>DevOps</span><br>Git/GitHub, Basic Docker</li>
+                            <li><span>UI/UX</span><br>Figma (Wireframing)</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -----------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I create stunning, responsive websites tailored to your brand's identity and business goals.
+                    From sleek portfolios to robust e-commerce platforms,
+                    I combine aesthetic design with seamless functionality 
+                    to deliver an exceptional user experience that drives engagement and conversions.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I specialize in crafting intuitive and visually appealing user interfaces
+                    that prioritize usability and accessibility. Through research-driven design,
+                    I ensure every interaction is meaningful, enhancing user satisfaction and boosting retention rates for your digital products.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>I design sleek, user-centric mobile applications that stand out in competitive markets. Focusing on both aesthetics and functionality,
+                    I create apps that are easy to navigate, visually compelling, and optimized for performance across all devices.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ------------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1>My Work</h1>
+        <p>Coming soon...</p>
+    </div>
+</div>
+
+<!-- ------------contact---------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>mohamadalaasabra@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+962790318512</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mohamad-alaa-sabra/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/mohamad-alaa" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Alaa.</p>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname) {
+        // Remove active classes from all tabs
+        document.querySelectorAll('.tab-links').forEach(tab => {
+            tab.classList.remove("active-link");
+        });
+        document.querySelectorAll('.tab-contents').forEach(tab => {
+            tab.classList.remove("active-tab");
+        });
+
+        // Add active class to clicked tab
+        event.currentTarget.classList.add("active-link"); // Fixed typo
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbynwpNZZ9e04KLf1xqUKGTQ8RKVoPGmRLdcvk_xlmX7qJmRcQw1dZ_3zCV9a6aAQCsTwg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Succssfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+        
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+
+</html>
